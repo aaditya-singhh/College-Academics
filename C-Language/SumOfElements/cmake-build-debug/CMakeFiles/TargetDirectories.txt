@@ -1,0 +1,3 @@
+/Users/sakshamshrey/GitHub/College-Academics/C-Language/SumOfElements/cmake-build-debug/CMakeFiles/SumOfElements.dir
+/Users/sakshamshrey/GitHub/College-Academics/C-Language/SumOfElements/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/sakshamshrey/GitHub/College-Academics/C-Language/SumOfElements/cmake-build-debug/CMakeFiles/rebuild_cache.dir
