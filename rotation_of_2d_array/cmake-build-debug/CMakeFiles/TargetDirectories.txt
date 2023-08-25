@@ -1,0 +1,3 @@
+C:/Users/as387/CLionProjects/rotation_of_2d_array/cmake-build-debug/CMakeFiles/rotation_of_2d_array.dir
+C:/Users/as387/CLionProjects/rotation_of_2d_array/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/as387/CLionProjects/rotation_of_2d_array/cmake-build-debug/CMakeFiles/rebuild_cache.dir
