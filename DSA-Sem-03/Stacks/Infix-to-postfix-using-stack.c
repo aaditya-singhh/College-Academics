@@ -87,7 +87,6 @@ void infixToPostfix(char infix[], char postfix[]) {
        postfix[j++] = pop(&stack);
    }
 
-
    postfix[j] = '\0';
 }
 
