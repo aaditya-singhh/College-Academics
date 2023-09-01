@@ -1,2 +1,1 @@
-This repository contains the algorithms and codes that we have done as a part of our college curriculum.
-Thanks for taking a look into it !!     :)
+This directory in the repository contains code written by me, Saksham Shrey, while the duration of my undergrads. I hereby withold all of the rights to intellectual property and disitribution of the materials inside.
