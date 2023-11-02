@@ -1,3 +1,0 @@
-C:/Users/as387/CLionProjects/sum_of_two_very_big_numbers/cmake-build-debug/CMakeFiles/sum_of_two_very_big_numbers.dir
-C:/Users/as387/CLionProjects/sum_of_two_very_big_numbers/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/as387/CLionProjects/sum_of_two_very_big_numbers/cmake-build-debug/CMakeFiles/rebuild_cache.dir
