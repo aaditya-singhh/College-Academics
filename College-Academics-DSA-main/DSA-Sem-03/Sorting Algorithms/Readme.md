@@ -1,1 +1,0 @@
-This directory contains questions based on the sorting algorithms 
