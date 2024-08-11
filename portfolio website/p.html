@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Portfolio</title>
+    <style>
+        
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    text-decoration:none;
+    border:none;
+    outline:none;
+    scroll-behavior: smooth;
+    font-family: "Poppins",sans-serif;
+}
+:root{
+    --bg-color:#1a1a1a;
+    --snd-bg-color:#2e2e2e;
+    --text-color:#e0e0e0;
+    --main-color:#00ffff;
+}
+.float-right {
+    float: right;
+    margin-left: 2px; 
+    margin-bottom: 20px; 
+}
+html{
+    font-size: 60%;
+    overflow-x: hidden;
+}
+body{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+section{
+    min-height: 100vh;
+    padding: 10rem 10% 2rem;
+}
+.header{
+    position:fixed;
+    top: 0;
+    left:0;
+    width:100%;
+    padding: 2rem 9%;
+    background:var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.pic
+{
+   font-size: 1.7rem;
+   color:var(--text-color);
+   font-weight: 700;
+   cursor:default; 
+}
+.navbar a{
+    font-size: 1.8rem;
+    color: var(--text-color);
+    margin-left: 4rem;
+    font-weight: 700;
+}
+.navbar a:hover,
+.navbar a.active{
+    color:var(--text-color);
+}
+#menu-icon{
+    font-size: 3.4rem;
+    color: var(--text-color);
+    display: none;
+}
+.home
+{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(45deg,#555555,#00cccc,#808080,#000000);
+    background-size: 300%;
+    animation: color 6s ease-in-out infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home-content h3{
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+.home-content h3:nth-of-type(2){
+    margin-bottom: 2rem;
+}
+span{
+    color:var(--main-color);
+}
+.home-content h1
+{
+    font-size: 5.2rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.home-img img{
+    width:25vw;
+    animation: floatImage 2s ease-in-out infinite;
+}
+@keyframes home{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+@keyframes floatImage{
+0% {
+    transform:tranlateY(0);
+}
+50%{
+    transform:translateY(-2.2rem);
+}
+100%{
+    transform:translateY(0);
+}
+}
+.home-content p{
+    font-size: 1.5rem;
+}
+.socialconn a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background: transparent;
+    border: .2rem solid var(--main-color);
+    border-radius: 50%;
+    font-size: 2rem;
+    color: var(--main-color);
+    margin: 3rem 1.3rem 3 rem 0;
+    transition: .10s ease;
+}
+.socialconn a:hover{
+    background: var(--main-color);
+    color: var(--snd-bg-color);
+    box-shadow: 0 0 1rem var(--main-color);
+}
+.btn{
+    display: inline-block;
+    padding: 1rem 2.7rem;
+    background: var(--main-color);
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem var(--main-color);
+    font-size: 1.6rem;
+    color: var(--bg-color);
+    letter-spacing: .2rem;
+    font-weight: 600;
+    transition: .6 ease;
+}
+.btn:hover{
+    box-shadow: none;
+}
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background: var(--snd-bg-color);
+}
+.about-img img{
+    width: 25vw;
+}
+.heading{
+    text-align: center;
+    font-size: 4.5rem;
+}
+.acont h2{
+    text-align: left;
+    line-height: 1.2;
+}
+.acont h3{
+    font-size: 2.6rem;
+}
+.acont p{
+    font-size: 1.7rem;
+    margin: 2rem 0 3rem;
+}
+.services.h2{
+    margin-bottom: 6rem;
+}
+.services-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+}
+.services-container .services-box{
+    flex: 1 1 30rem;
+    background: var(--snd-bg-color);
+    padding: 3rem 2rem 4rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: .2rem solid var(--bg-color);
+    transition: .6s ease;
+}
+.services-container .services-box:hover{
+    border-color: var(--main-color);
+    transform: scale(1.02);
+}
+.services-box i{
+    font-size: 6.5rem;
+    color: var(--main-color);
+}
+.services-box h3{
+    font-size: 2.6rem;
+}
+.services-box p{
+    font-size: 1.5rem;
+    margin: 1rem 0 3;
+}
+.proj{
+    background: var(--snd-bg-color);
+}
+.proj h2{
+    margin-bottom: 4rem;
+}
+.proj-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 2.5rem;
+}
+.proj-container .proj-box{
+    position: relative;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem var(--bg color);
+    overflow: hidden;
+    display: flex;
+}
+.proj-box img{
+    width: 100%;
+    transition: .6s ease;
+    opacity: 0.7;
+}
+.proj-box:hover img{
+    transform: scale(1.1);
+}
+.proj-box .proj-layer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,0.1),var(--main-color));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 4rem;
+    transform: translateY(100%);
+    transition: .5s ease;
+}
+.proj-box:hover .proj-layer{
+    transform: translateY(0);
+}
+.proj-layer h4{
+    font-size: 2.5rem;
+}
+.proj-layer p{
+    font-size: 1.5rem;
+    margin: .3rem 0 1rem;
+}
+.proj-layer a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background: #00cccc;
+    border: .2rem solid var(--main-color);
+    border-radius: 50%;
+    font-size: 2rem;
+    color: black;
+    margin: 3rem 1.3rem 3 rem 0;
+    transition: .10s ease;
+}
+.proj a:hover{
+    background: #00cccc;
+    color: var(--snd-bg-color);
+    box-shadow: 0 0 1rem var(--main-color);
+}
+.contact h2{
+    margin-bottom: 3rem;
+}
+.contact form{
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.contact form .input-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.contact form .input-box input,
+.contact form textarea{
+    width: 100%;
+    padding: 1.7rem;
+    font-size: 1.8rem;
+    color: var(--text-color);
+    background: var(--snd-bg-color);
+    border-radius: .9rem;
+    margin: .5rem 0;
+}
+.contact form .input-box input:focus,
+.contact form textarea:focus{
+    border-color: var(--main-color);
+}
+.contact form textarea{
+    height: 16rem;
+    resize: none;
+}
+.footer{
+    padding: 2.5rem 9%;
+    background: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.footer h3{
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+.footer .socialconn a{
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.4rem;
+    margin: 0 1rem;
+}
+#scroll-top{
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    font-size: 3rem;
+    background: var(--main-color);
+    color: var(--snd-bg-color);
+    width: 4.7rem;
+    height: 4.7rem;
+    border-radius: .7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    box-shadow: 0 0 1rem var(--main-color);
+    transition: .3s ease;
+}
+#scroll-top.active{
+    display: flex;
+}
+#scroll-top:hover{
+    color: var(--text-color);
+    transform: scale(1.1);
+}
+@media (max-width:990px){
+    html{
+        font-size: 55%;
+    }
+    .home-content h3,
+    .home-content h1{
+        text-align: center;
+    }
+    .proj-container{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width:768px){
+    html{
+        font-size: 50%;
+    }
+    #menu-icon{
+        display: block;
+        cursor: pointer;
+        margin-top: 5px;
+    }
+    .navbar{
+        position: absolute;
+        top: 110%;
+        right: -100%;
+        width: 30rem;
+        background: #ccc;
+        border-radius: 1rem;
+        box-shadow: 0 0 .8rem rgba(0,0,0,.3);
+        transition: .4s ease;
+    }
+    .navbar a{
+        color: #222;
+        margin: 2rem;
+        padding: 1.5rem;
+        font-size: 2rem;
+        display: block;
+    }
+    .navbar a:hover,
+    .navbar a.active{
+        background: var(--bg-color);
+        color: var(--text-color);
+    }
+    .navbar.open{
+        right: 5%;
+    }
+    .about{
+        flex-direction: column;
+        text-align: center;
+    }
+    .about-img img{
+        width: 100%;
+    }
+}
+@media (max-width:520px){
+    html{
+        font-size: 45%;
+    }
+    .proj-container{
+        grid-template-columns: 1fr;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h2 class="pic">My Portfolio</h2>
+        <div class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="menu-icon" id="menu-icon">&#9776;</div>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, I'm</h3>
+            <h1>Aaditya Singh</h1>
+            <h3>Frontend Developer</h3>
+            <p>Welcome to my portfolio! I am a passionate about frontend development and data structures</p>
+            <br>    
+            <a href="#contact" class="btn">Hire Me</a>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-img">
+        </div>
+        <div class="acont">
+            <h2>About Me</h2>
+            <h3>Frontend Developer</h3>
+            <p>3rd year student thrilled to learn Frontend Development</p>
+            <a href="#projects" class="btn">View Projects</a>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <h2 class="heading">Services</h2>
+        <div class="services-container">
+            <div class="services-box">
+                <i class="fas fa-code"></i>
+                <h3>Web Development</h3>
+                <p>Frontend development can be done using HTML,CSS and JAVASCRIPT.As its the most important content
+                     experienced by the user.With a very strong knowlege of the three,website can be created</p>
+            </div>
+            <div class="services-box">
+                <i class="fas fa-paint-brush"></i>
+                <h3>Web Design</h3>
+                <p>Some basic principles of ui/ux</p>
+            </div>
+            <div class="services-box">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>Data Structures</h3>
+                <p>I know  Arrays, Stack, and Queues are examples of Linear Data Structure, and Linked List, 
+                    Trees are examples of Non-Linear Data Structure.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="proj" id="projects">
+        <h2 class="heading">Projects</h2>
+        <div class="proj-container">
+            
+            <div class="proj-box" justify-content: center;>
+                <img src="social.png" alt="Project Image">
+                <div class="proj-layer">
+                    <h4>Social media Platform</h4>
+                    <p>Social media Platform allows the user to browse through 
+                        different applications based on the user experince.</p>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact Me</h2>
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Your Name">
+                <input type="email" placeholder="Your Email">
+            </div>
+            <textarea placeholder="Your Message"></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    
+
+    <a href="#home" id="scroll-top"><i class="fas fa-chevron-up"></i></a>
+
+    <script>
+        const menuIcon = document.getElementById('menu-icon');
+        const navbar = document.querySelector('.navbar');
+
+        menuIcon.onclick = () => {
+            navbar.classList.toggle('open');
+        };
+
+        const scrollTop = document.getElementById('scroll-top');
+        window.onscroll = () => {
+            if (window.scrollY > 100) {
+                scrollTop.classList.add('active');
+            } else {
+                scrollTop.classList.remove('active');
+            }
+        };
+    </script>
+</body>
+</html>
